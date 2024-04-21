@@ -1,0 +1,502 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.function.Consumer;
+
+  
+class Deneme {
+    public static void main(String[] args)
+    {
+        // initializing variables
+        int num1 = 10, num2 = 20, sum = 0;
+  
+        // Displaying num1 and num2
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+  
+        // adding num1 and num2
+        sum = num1 + num2;
+        System.out.println("The sum = " + sum);
+	
+
+	// initializing variables
+        int num1 = 20, num2 = 10, sub = 0;
+  
+        // Displaying num1 and num2
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+  
+        // subtracting num1 and num2
+        sub = num1 - num2;
+        System.out.println("Subtraction = " + sub);
+
+	int num1 = 20, num2 = 10, mult = 0;
+  
+        // Displaying num1 and num2
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+  
+        // Multiplying num1 and num2
+        mult = num1 * num2;
+        System.out.println("Multiplication = " + mult);
+
+	  int num1 = 20, num2 = 10, div = 0;
+  
+        // Displaying num1 and num2
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+  
+        // Dividing num1 and num2
+        div = num1 / num2;
+        System.out.println("Division = " + div);
+
+	// initializing variables
+        int num1 = 5, num2 = 2, mod = 0;
+  
+        // Displaying num1 and num2
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+  
+        // Remaindering num1 and num2
+        mod = num1 % num2;
+        System.out.println("Remainder = " + mod);
+
+	// Declaring a custom variable
+        int n1 = 20;
+ 
+        // Printing the above variable
+        System.out.println("Number = " + n1);
+ 
+        // Performing unary operation
+        n1 = -n1;
+ 
+        // Printing the above result number
+        // after unary operation
+        System.out.println("Result = " + n1);
+
+ // Initializing variables
+        boolean cond = true;
+        int a = 10, b = 1;
+ 
+        // Displaying values stored in above variables
+        System.out.println("Cond is: " + cond);
+        System.out.println("Var1 = " + a);
+        System.out.println("Var2 = " + b);
+ 
+        // Displaying values stored in above variables
+        // after applying unary NOT operator
+        System.out.println("Now cond is: " + !cond);
+        System.out.println("!(a < b) = " + !(a < b));
+        System.out.println("!(a > b) = " + !(a > b));
+
+	// Declaring variables
+        int num;
+        String name;
+ 
+        // Assigning values
+        num = 10;
+        name = "GeeksforGeeks";
+ 
+        // Displaying the assigned values
+        System.out.println("num is assigned: " + num);
+        System.out.println("name is assigned: " + name);
+
+// Declaring variables
+        int num1 = 10, num2 = 20;
+ 
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+ 
+        // Adding & Assigning values
+        num1 += num2;
+ 
+        // Displaying the assigned values
+        System.out.println("num1 = " + num1);
+
+// Declaring variables
+        int num1 = 10, num2 = 20;
+ 
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+ 
+        // Subtracting & Assigning values
+        num1 -= num2;
+ 
+        // Displaying the assigned values
+        System.out.println("num1 = " + num1);
+
+// Declaring variables
+        int num1 = 10, num2 = 20;
+ 
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+ 
+        // Multiplying & Assigning values
+        num1 *= num2;
+ 
+        // Displaying the assigned values
+        System.out.println("num1 = " + num1);
+	
+	 // Declaring variables
+        int num1 = 20, num2 = 10;
+ 
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+ 
+        // Dividing & Assigning values
+        num1 /= num2;
+ 
+        // Displaying the assigned values
+        System.out.println("num1 = " + num1);
+
+ // Declaring variables
+        int num1 = 5, num2 = 3;
+ 
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+ 
+        // Moduling & Assigning values
+        num1 %= num2;
+ 
+        // Displaying the assigned values
+        System.out.println("num1 = " + num1);
+
+// Initializing variables
+        int var1 = 5, var2 = 10, var3 = 5;
+ 
+        // Displaying var1, var2, var3
+        System.out.println("Var1 = " + var1);
+        System.out.println("Var2 = " + var2);
+        System.out.println("Var3 = " + var3);
+ 
+        // Comparing var1 and var2 and
+        // printing corresponding boolean value
+        System.out.println("var1 == var2: "
+                           + (var1 == var2));
+ 
+        // Comparing var1 and var3 and
+        // printing corresponding boolean value
+        System.out.println("var1 == var3: "
+                           + (var1 == var3));
+
+ // Initializing variables
+        int var1 = 5, var2 = 10, var3 = 5;
+ 
+        // Displaying var1, var2, var3
+        System.out.println("Var1 = " + var1);
+        System.out.println("Var2 = " + var2);
+        System.out.println("Var3 = " + var3);
+ 
+        // Comparing var1 and var2 and
+        // printing corresponding boolean value
+        System.out.println("var1 == var2: "
+                           + (var1 != var2));
+ 
+        // Comparing var1 and var3 and
+        // printing corresponding boolean value
+        System.out.println("var1 == var3: "
+                           + (var1 != var3));
+
+  // Initializing variables
+        int var1 = 30, var2 = 20, var3 = 5;
+ 
+        // Displaying var1, var2, var3
+        System.out.println("Var1 = " + var1);
+        System.out.println("Var2 = " + var2);
+        System.out.println("Var3 = " + var3);
+ 
+        // Comparing var1 and var2 and
+        // printing corresponding boolean value
+        System.out.println("var1 > var2: " + (var1 > var2));
+ 
+        // Comparing var1 and var3 and
+        // printing corresponding boolean value
+        System.out.println("var3 > var1: "
+                           + (var3 >= var1));
+
+// Initializing variables
+        int var1 = 10, var2 = 20, var3 = 5;
+ 
+        // Displaying var1, var2, var3
+        System.out.println("Var1 = " + var1);
+        System.out.println("Var2 = " + var2);
+        System.out.println("Var3 = " + var3);
+ 
+        // Comparing var1 and var2 and
+        // printing corresponding boolean value
+        System.out.println("var1 < var2: " + (var1 < var2));
+ 
+        // Comparing var2 and var3 and
+        // printing corresponding boolean value
+        System.out.println("var2 < var3: " + (var2 < var3));
+
+ // Initializing variables
+        int var1 = 20, var2 = 20, var3 = 10;
+ 
+        // Displaying var1, var2, var3
+        System.out.println("Var1 = " + var1);
+        System.out.println("Var2 = " + var2);
+        System.out.println("Var3 = " + var3);
+ 
+        // Comparing var1 and var2 and
+        // printing corresponding boolean value
+        System.out.println("var1 >= var2: "
+                           + (var1 >= var2));
+ 
+        // Comparing var2 and var3 and
+        // printing corresponding boolean value
+        System.out.println("var2 >= var3: "
+                           + (var3 >= var1));
+
+// Initializing variables
+        int var1 = 10, var2 = 10, var3 = 9;
+ 
+        // Displaying var1, var2, var3
+        System.out.println("Var1 = " + var1);
+        System.out.println("Var2 = " + var2);
+        System.out.println("Var3 = " + var3);
+ 
+        // Comparing var1 and var2 and
+        // printing corresponding boolean value
+        System.out.println("var1 <= var2: "
+                           + (var1 <= var2));
+ 
+        // Comparing var2 and var3 and
+        // printing corresponding boolean value
+        System.out.println("var2 <= var3: "
+                           + (var2 <= var3));
+
+ // initializing variables
+        int a = 10, b = 20, c = 20, d = 0;
+  
+        // Displaying a, b, c
+        System.out.println("Var1 = " + a);
+        System.out.println("Var2 = " + b);
+        System.out.println("Var3 = " + c);
+  
+        // using logical AND to verify
+        // two constraints
+        if ((a < b) && (b == c)) {
+            d = a + b + c;
+            System.out.println("The sum is: " + d);
+        }
+        else
+            System.out.println("False conditions");
+
+ // initializing variables
+        int a = 10, b = 1, c = 10, d = 30;
+  
+        // Displaying a, b, c
+        System.out.println("Var1 = " + a);
+        System.out.println("Var2 = " + b);
+        System.out.println("Var3 = " + c);
+        System.out.println("Var4 = " + d);
+  
+        // using logical OR to verify
+        // two constraints
+        if (a > b || c == d)
+            System.out.println("One or both"
+                               + " the conditions are true");
+        else
+            System.out.println("Both the"
+                               + " conditions are false");
+
+ // initializing variables
+        int a = 10, b = 1;
+  
+        // Displaying a, b, c
+        System.out.println("Var1 = " + a);
+        System.out.println("Var2 = " + b);
+  
+        // Using logical NOT operator
+        System.out.println("!(a < b) = " + !(a < b));
+        System.out.println("!(a > b) = " + !(a > b));
+
+		 int[][] arr_ = { { 1, 2 }, { 3, 4 } };
+  
+        for (int i = 0; i < 2; i++)
+            for (int j = 0; j < 2; j++)
+                System.out.println("arr_[" + i + "][" + j + "] = "
+                                   + arr_[i][j]);
+
+	int[][][] arr = { { { 1, 2 }, { 3, 4 } }, { { 5, 6 }, { 7, 8 } } };
+  
+        for (int i = 0; i < 2; i++)
+            for (int j = 0; j < 2; j++)
+                for (int z = 0; z < 2; z++)
+                    System.out.println("arr[" + i
+                                       + "]["
+                                       + j + "]["
+                                       + z + "] = "
+                                       + arr[i][j][z]);
+
+
+	 // Scanner class to take
+        // values from console
+        Scanner scanner = new Scanner(System.in);
+  
+        // totalTestCases = total
+        // number of TestCases
+        // eachTestCaseValues =
+        // values in each TestCase as
+        // an Array values
+        int totalTestCases, eachTestCaseValues;
+  
+        // takes total number of
+        // TestCases as integer number
+        totalTestCases = scanner.nextInt();
+  
+        // An array is formed as row
+        // values for total testCases
+        int[][] arrayMain = new int[totalTestCases][];
+  
+        // for loop to take input of
+        // values in each TestCase
+        for (int i = 0; i < arrayMain.length; i++) {
+            eachTestCaseValues = scanner.nextInt();
+            arrayMain[i] = new int[eachTestCaseValues];
+            for (int j = 0; j < arrayMain[i].length; j++) {
+                arrayMain[i][j] = scanner.nextInt();
+            }
+        } // All input entry is done.
+  
+        // Start executing output
+        // according to condition provided
+        for (int i = 0; i < arrayMain.length; i++) {
+  
+            // Initialize total number of
+            // even & odd numbers to zero
+            int nEvenNumbers = 0, nOddNumbers = 0;
+  
+            // prints TestCase number with
+            // total number of its arguments
+            System.out.println(
+                "TestCase " + i + " with "
+                + arrayMain[i].length + " values:");
+            for (int j = 0; j < arrayMain[i].length; j++) {
+                System.out.print(arrayMain[i][j] + " ");
+  
+                // even & odd counter updated as
+                // eligible number is found
+                if (arrayMain[i][j] % 2 == 0) {
+                    nEvenNumbers++;
+                }
+                else {
+                    nOddNumbers++;
+                }
+            }
+            System.out.println();
+  
+            // Prints total numbers of
+            // even & odd
+            System.out.println(
+                "Total Even numbers: " + nEvenNumbers
+                + ", Total Odd numbers: " + nOddNumbers);
+        }
+    }
+}
+public static void Others(){
+ ArrayList<String> animals = new ArrayList<>();
+
+    // add elements in the array list
+    animals.add("Dog");
+    animals.add("Cat");
+    animals.add("Horse");
+    System.out.println("ArrayList: " + animals);
+
+    // remove element from index 2
+    String str = animals.remove(2);
+    System.out.println("Updated ArrayList: " + animals);
+    System.out.println("Removed Element: " + str);
+
+	 Vector<String> animals= new Vector<>();
+        animals.add("Dog");
+        animals.add("Horse");
+        animals.add("Cat");
+
+        // Using get()
+        String element = animals.get(2);
+        System.out.println("Element at index 2: " + element);
+
+        // Using iterator()
+        Iterator<String> iterate = animals.iterator();
+        System.out.print("Vector: ");
+        while(iterate.hasNext()) {
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+
+ ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(9);
+    numbers.add(8);
+    numbers.add(1);
+    numbers.forEach( (n) -> { System.out.println(n); } );
+ ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(9);
+    numbers.add(8);
+    numbers.add(1);
+    Consumer<Integer> method = (n) -> { System.out.println(n); };
+    numbers.forEach( method );
+StringFunction exclaim = (s) -> s + "!";
+    StringFunction ask = (s) -> s + "?";
+    printFormatted("Hello", exclaim);
+    printFormatted("Hello", ask);
+
+
+
+}
+
+public static void printFormatted(String str, StringFunction format) {
+    String result = format.run(str);
+    System.out.println(result);
+  }
+
+public static void jaggedArray(){
+ // Declaring 2-D array with 2 rows
+        int arr[][] = new int[2][];
+ 
+        // Making the above array Jagged
+ 
+        // First row has 3 columns
+        arr[0] = new int[3];
+ 
+        // Second row has 2 columns
+        arr[1] = new int[2];
+ 
+        // Initializing array
+        int count = 0;
+        for (int i = 0; i < arr.length; i++)
+            for (int j = 0; j < arr[i].length; j++)
+                arr[i][j] = count++;
+ 
+        // Displaying the values of 2D Jagged array
+        System.out.println("Contents of 2D Jagged Array");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++)
+                System.out.print(arr[i][j] + " ");
+            System.out.println();
+        }
+}
+
+public static void ShiftOperator(){
+	int number = 2;
+        
+          // 2 bit left shift operation
+        int Ans = number << 2; 
+        
+        System.out.println(Ans);
+
+int number = 8;
+        
+        // 2 bit signed right shift
+        int Ans = number >> 2;
+        
+        System.out.println(Ans);   
+
+ byte num1 = 8;
+        byte num2 = -8;
+       
+        System.out.println(num1 >>> 2);    
+        System.out.println(num2 >>> 2);   
+}

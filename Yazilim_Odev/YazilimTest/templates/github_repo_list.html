@@ -1,0 +1,50 @@
+<!-- github_repo_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Repos</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link {% if request.resolver_match.view_name == 'anasayfa' %}active{% endif %}" href="{% url 'anasayfa' %}">Github URL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if request.resolver_match.view_name == 'github_repo_list' %}active{% endif %}" href="{% url 'github_repo_list' %}">Github Repoları</a>
+            </li>
+          </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1 class="text-center">GitHub Repositories</h1>
+  <table class="table table-bordered table-striped mx-auto" style="width: 75%;">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for github_repo in github_repos %}
+        <tr>
+          <td>{{ forloop.counter }}</td>
+          <td><a href="{% url 'java_class_list' github_repo.id %}">{{ github_repo.url }}</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
